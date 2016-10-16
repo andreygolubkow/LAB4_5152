@@ -141,6 +141,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Color.cpp" />
     <ClCompile Include="LAB4_5152.cpp" />
     <ClCompile Include="Month.cpp" />
     <ClCompile Include="Weekday.cpp" />

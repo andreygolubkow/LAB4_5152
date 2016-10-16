@@ -1,6 +1,9 @@
 #pragma once
-
+#include <string>
 enum Color
 {
-	Red, Green, Blue, White, Black
+	Blue = 1, Green = 2, Red = 4, White = 7, Black = 8
 };
+
+void SetColor(Color color);
+Color EnterColor();
