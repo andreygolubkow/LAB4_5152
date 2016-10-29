@@ -15,7 +15,7 @@ std::string SexToStr(Sex sex)
 
 Sex StrToSex(std::string sex)
 {
-	std::transform(sex.begin(), sex.end(), sex.begin(), ::tolower);
+	//std::transform(sex.begin(), sex.end(), sex.begin(), ::tolower);
 	if (sex == "m")
 	{
 		return Male;

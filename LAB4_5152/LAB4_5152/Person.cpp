@@ -8,6 +8,7 @@ void PrintPerson(Person& person)
 void ReadPerson(Person* person)
 {
 	std::cout << "\nEnter person first name:";
+	std::cin.clear();
 	std::cin >> person->fName;
 	std::cout << "\nEnter person last name:";
 	std::cin >> person->lName;
@@ -15,6 +16,7 @@ void ReadPerson(Person* person)
 	std::cin >> person->age;
 	std::cout << "\nEnter person sex(Male,Female):";
 	std::cin >> person->sex;
+	std::cin.clear();
 }
 
 

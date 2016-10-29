@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <limits>
 #include "Sex.h"
 
 struct Person
@@ -17,7 +18,6 @@ struct Person
 	}
 
 };
-
 
 void PrintPerson(Person& person);
 void ReadPerson(Person* person);
