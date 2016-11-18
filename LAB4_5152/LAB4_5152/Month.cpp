@@ -1,7 +1,7 @@
-#include "Month.h"
+﻿#include "Month.h"
 #include <iostream>
 
-void printMonth(int day)
+void printMonth(int day) //выводим месяц по дню
 {
 	int i = 0;
 	for (i = 1; (i <= 12) && (day > 0); i++)
@@ -9,14 +9,14 @@ void printMonth(int day)
 		if (i % 2 == 0)
 		{
 			day -= 30;
-		}
+		} 
 		else
 		{
 			day -= 31;
 		}
 	}
 	i--;
-	Month M = IntToMonth(i);
+	Month M = (Month)i;// 
 	switch (M)
 	{
 	case January:
@@ -58,7 +58,7 @@ void printMonth(int day)
 	}
 }
 
-Month IntToMonth(int i)
+Month IntToMonth(int i)//конвертируем число в месяц
 {//January = 1, February, March, April, May, June, July, August, September, October, November, December
 	switch (i)
 	{

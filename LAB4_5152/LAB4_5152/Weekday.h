@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 
-enum Weekday
+enum Weekday//Перечисление дней недели
 {
 	Monday , Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 };

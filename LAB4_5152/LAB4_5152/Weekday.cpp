@@ -1,7 +1,7 @@
 ﻿#include "Weekday.h"
 #include <iostream>
 
-void printDay(int day)
+void printDay(int day)//выводим день по его номеру в году
 {
 	Weekday d;
 

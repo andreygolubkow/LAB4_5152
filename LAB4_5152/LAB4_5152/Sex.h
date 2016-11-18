@@ -1,14 +1,14 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include <iostream>
 #include <stdexcept>
 #include <algorithm>
 
-enum Sex
+enum Sex//Перечиление полов
 {
 	Male, Female
 };
 
 std::string SexToStr(Sex sex);
 Sex StrToSex(std::string sex);
-std::istream& operator >> (std::istream& is, Sex& sex);
+std::istream& operator >> (std::istream& is, Sex& sex); //Переопределили оператор ввода

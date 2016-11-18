@@ -1,6 +1,6 @@
-#include "Sex.h"
+﻿#include "Sex.h"
 
-std::string SexToStr(Sex sex)
+std::string SexToStr(Sex sex) //конвертация пол в строку
 {
 	switch (sex)
 	{
@@ -13,7 +13,7 @@ std::string SexToStr(Sex sex)
 	}
 }
 
-Sex StrToSex(std::string sex)
+Sex StrToSex(std::string sex)//Строка в пол
 {
 	//std::transform(sex.begin(), sex.end(), sex.begin(), ::tolower);
 	if (sex == "m")
@@ -27,7 +27,7 @@ Sex StrToSex(std::string sex)
 }
 
 
-std::istream& operator >> (std::istream& is, Sex& i)
+std::istream& operator >> (std::istream& is, Sex& i) //переопределяем оператор ввода
 {
 	int tmp;
 	if (is >> tmp)

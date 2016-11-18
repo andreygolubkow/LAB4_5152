@@ -3,10 +3,10 @@
 
 void SetColor(Color color)
 {
-	switch (color)
+	switch (color) //Установка цвета консоли
 	{
 	case Blue:
-		system("color 1");
+		system("color " + (Color)color);
 		break;
 	case Green:
 		system("color 2");
@@ -31,7 +31,7 @@ Color EnterColor()
 	int clr = 0;
 	std::cout << "\nEnter Color(Blue = 1, Green = 2, Red = 4, White = 7, Black = 8):";
 	std::cin >> clr;
-	switch (clr)
+	switch (clr)//ввод цвета с клавиатуры
 	{
 	case 1:
 		return Blue;

@@ -1,11 +1,11 @@
-#include "Person.h"
+﻿#include "Person.h"
 
-void PrintPerson(Person& person)
+void PrintPerson(Person& person)//выводим персону на экран
 {
 	std::cout << person.fName << '\t' << person.lName << "\t Age:" << person.age << "\t Sex:" << SexToStr(person.sex) << std::endl;
 }
 
-void ReadPerson(Person* person)
+void ReadPerson(Person* person) //Считываем персону с экрана
 {
 	std::cout << "\nEnter person first name:";
 	std::cin.clear();
